@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diary Ulang Tahun untuk Ica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="diary-container">
+        <!-- Halaman Pembuka -->
+        <div class="page" id="page1">
+            <h1>Happy Birthday, Ica! 🎂❤️</h1>
+            <img src="path/to/photo1.jpg" alt="Kenangan Bersama" class="photo">
+            <p>Hari ini adalah hari yang spesial, hari di mana orang yang paling istimewa dalam hidupku dilahirkan. Ayo kita mulai perjalanan kecil ini, khusus untuk kamu.</p>
+            <button onclick="nextPage()">Buka Diary</button>
+        </div>
+
+        <!-- Pesan Kenangan -->
+        <div class="page hidden" id="page2">
+            <h2>Halaman Kenangan 💭</h2>
+            <img src="path/to/photo2.jpg" alt="Kenangan" class="photo">
+            <p>Kita telah melalui begitu banyak momen bersama. Setiap momen bersamamu adalah kenangan yang tidak akan pernah kulupakan. Terima kasih sudah menjadi bagian dari hidupku, Ica! 💖</p>
+            <button onclick="prevPage()">Kembali</button>
+            <button onclick="nextPage()">Halaman Selanjutnya</button>
+        </div>
+
+        <!-- Harapan Masa Depan -->
+        <div class="page hidden" id="page3">
+            <h2>Halaman Harapan ✨</h2>
+            <img src="path/to/photo3.jpg" alt="Harapan Masa Depan" class="photo">
+            <p>Semoga di masa depan kita terus bersama, mencapai mimpi-mimpi kita. Aku berharap bisa selalu ada di sampingmu, mendukungmu dalam setiap langkah. 🌠</p>
+            <button onclick="prevPage()">Kembali</button>
+            <button onclick="nextPage()">Ke Halaman Penutup</button>
+        </div>
+
+        <!-- Penutup dengan Animasi Kembang Api -->
+        <div class="page hidden" id="page4">
+            <h2>Pesan Terakhir 💌</h2>
+            <img src="path/to/photo4.jpg" alt="Penutup" class="photo">
+            <p>Selamat ulang tahun yang ke-22, Ica! Semoga semua kebahagiaan selalu menghampirimu. Aku sayang kamu, dan semoga kita selalu bersama. 🌹❤️</p>
+            <button onclick="prevPage()">Kembali</button>
+            <button onclick="showFireworks()">Tutup Diary</button>
+        </div>
+    </div>
+
+    <!-- Animasi dan dekorasi bintang -->
+    <div id="animation-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
